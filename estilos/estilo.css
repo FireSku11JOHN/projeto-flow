@@ -7,21 +7,27 @@
     padding: 0px;
 }
 
-/* :root {
-    --cor4
-} */
+:root {
+    --Montserrat: "Montserrat", sans-serif;
+}
 
 html {
-    background-color: #F2E4DF;
+    background-image: linear-gradient(to bottom, #60dffb, #00333f);
 }
 
 header {
+    /* position: fixed;
+    top: 0;
+    right: 0; */
+    left: 0;
     display: flex;
     background-color: #04657B;
     height: 130px;
     width: 100vw;
+    max-width: 100%;
     justify-content: space-around;
     border-bottom: 13px solid #F58718;
+
 }
 
 #logo {
@@ -78,35 +84,40 @@ header {
 main {
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    /* padding-top:143px ; */
+    display: flex;
+    flex-direction: column;
 }
 
 #quem_somos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90vw;
-    height: 600px;
-    background:url('../imagens/bg_onda_grande.png') no-repeat top
-    center;
+    margin: auto;
+    width: 1450px;
+    max-width: 100%;
+    height: 730px;
+    background:url('../imagens/onda-pre-historica-capa222.jpg') no-repeat ;
     background-size: cover;
-    /* background-position: center center; */
-    /* background-attachment: fixed; */
+    object-fit: cover;
 }
 
 #quem_somos_texto {
     background-color: #25BCDE;
     margin-top: 30px;
-    margin-left: 30px;
-    width: 490px;
-    height: 450px;
+    margin-left: 20px;
+    width: 630px;
+    height: 520px;
     border-radius: 0px 10px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.372);
 }
 
 #quem_somos_texto_titulo {
     display: flex;
     align-items: center;
     background-color: white;
-    width: 300px;
+    width: 370px;
     margin: 10px 0px 0px 22px;
     border-radius: 0px 0px 10px 0px;
     box-shadow: #F58718 8px 8px;
@@ -120,24 +131,17 @@ main {
 #quem_somos_texto_titulo h1 {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
+    font-size: 1.8em;
 }
 
 #quem_somos_texto p {
     margin-left: 22px;
-    margin-top: 20px;
+    margin-top: 29px;
     font-family: "Montserrat", sans-serif;
     color: #191717;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.3em;
     margin-right: 22px;
-}
-
-#quem_somos_versiculo {
-    background-color: #F2E4DF;
-    width: 220px;
-    margin-left: 1.6em;
-    padding: 7px 18px 8px 18px;
-    border-radius: 10px;
 }
 
 #quem_somos_versiculo h2{
@@ -146,8 +150,78 @@ main {
     font-weight: 500;
 }
 
+#quem_somos_versiculo {
+    background-color: #F2E4DF;
+    width: 260px;
+    margin-left: 1.6em;
+    padding: 7px 18px 8px 18px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.372);
+}
+
 #quem_somos_versiculo p{
     font-family: "Baloo Bhai 2", sans-serif;
     line-height: 1.2;
+    font-size: 1.1em;
     margin: 4px 0px 4px 6px;
+}
+
+#objetivos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 730px;
+    background-color: #04738C;
+    background-image: url(../imagens/bg_onda_objetivos_730px.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#objetivos_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#objetivos_titulo_titulo  {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: #F58718 8px 8px;
+}
+
+#objetivos_titulo_titulo h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 2.6em;
+}
+
+#objetivos_titulo_titulo img{
+    width: 37px;
+    padding: 10px 13px 10px 10px;
+}
+
+#objetivos_titulo_imagem {
+    width: 500px;
+    margin-top: 130px;
+    border-radius: 15px;
+    box-shadow: 20px -20px 0px #DCBAA1;
+    /* box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.388); */
+}
+
+#objetivos p {
+    background-color: #D9FAFF;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 1.7em;
+    padding: 15px;
+    line-height: 1.5em;
+    width: 470px;
+    height: 530px;
+    border-radius: 12px;
 }
