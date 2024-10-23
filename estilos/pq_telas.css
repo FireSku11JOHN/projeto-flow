@@ -1,2 +1,92 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 600px){
+        
+    #logo-imagem {
+        height: 34px;
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    #logo p {
+        font-size: 14px;
+        height: 34px;
+        line-height: 14px;
+    }
+
+    #menu li {
+        margin: auto;
+        font-size: 12px;
+    }
+
+    #menu li > a{
+        width: 80px;
+        padding: 10px;
+    }
+
+    #quem_somos {
+        /* max-width: 100%; */
+        flex-direction: column;
+        align-items: flex-start;
+        height: 620px;
+        background:url('../imagens/bg_onda_grande_phone.jpg') no-repeat ;
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    #quem_somos_texto {
+        margin-top: 30px;
+        /* margin-left: 20px; */
+        width: 330px;
+        height: 430px;
+    }
+
+    #quem_somos_texto_titulo {
+        display: flex;
+        align-items: center;
+        width: 210px;
+        margin: 10px 0px 0px 18px;
+        box-shadow: #F58718 4px 4px;
+    }
+
+    #quem_somos_texto_titulo h1 {
+        font-size: 17px;
+    }
+
+    #quem_somos_texto_icone_grupo{
+        width: 14px;
+        padding: 5px 8px 5px 5px;
+    }
+
+    #quem_somos_texto p {
+        margin-left: 22px;
+        margin-top: 29px;
+        font-size: 13px;
+        margin-right: 18px;
+    }
+
+    #quem_somos_versiculo {
+        
+        width: 200px;
+        margin-left: 1.6em;
+        padding: 7px 18px 8px 18px;
+        border-radius: 10px;
+    }
+
+    #quem_somos_versiculo h2{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    #quem_somos_versiculo p{
+        line-height: 1.2;
+        font-size: 14px;
+        margin: 4px 0px 4px 6px;
+    }
+
+    #objetivos {
+        display: none;
+    }
+
+
+}
