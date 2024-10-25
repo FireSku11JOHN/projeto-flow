@@ -42,7 +42,7 @@
         justify-content: space-around;
         align-items: end;
         margin-right: 8px;
-        gap: 7px;
+        gap: 2px;
     }
 
     #menu li {
@@ -51,7 +51,7 @@
     
     #menu li > a{
         width: 80px;
-        padding: 0px;
+        padding: 5px;
     }
 
     #quem_somos {
@@ -65,9 +65,8 @@
 
     #quem_somos_texto {
         margin-top: 30px;
-        /* margin-left: 20px; */
         width: 330px;
-        height: 430px;
+        height: 447px;
     }
 
     #quem_somos_texto_titulo {
@@ -90,14 +89,13 @@
     #quem_somos_texto p {
         margin-left: 22px;
         margin-top: 29px;
-        font-size: 13px;
+        font-size: 14px;
         margin-right: 18px;
     }
 
     #quem_somos_versiculo {
-        
         width: 200px;
-        margin-left: 1.6em;
+        margin-left: 1.9em;
         padding: 7px 18px 8px 18px;
         border-radius: 10px;
     }
@@ -114,8 +112,37 @@
     }
 
     #objetivos {
-        display: none;
+        width: 600px;
     }
 
+    #objetivos_titulo_titulo {
+        width: 190px;
+        box-shadow: #F58718 5px 5px;
+
+    }
+
+    #objetivos_titulo_titulo img {
+        width: 22px;
+        padding: 5px 7px 5px 5px;
+    }
+
+    #objetivos_titulo_titulo h1 {
+        font-size: 22px;
+    }
+
+    #objetivos_titulo_imagem {
+        width: 300px;
+        margin-top: 70px;
+        border-radius: 13px;
+        box-shadow: 10px -10px 0px #DCBAA1;
+    }
+
+    #objetivos p {
+        font-size: 15px;
+        padding: 9px;
+        line-height: 1.5em;
+        width: 200px;
+        height: 400px;
+    }
 
 }

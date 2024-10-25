@@ -163,8 +163,8 @@ main {
 
 #objetivos {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     width: 100vw;
     max-width: 100%;
     height: 730px;
@@ -176,9 +176,9 @@ main {
 }
 
 #objetivos_titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
 }
 
 #objetivos_titulo_titulo  {
@@ -197,8 +197,11 @@ main {
 }
 
 #objetivos_titulo_titulo img{
+    align-items: end;
+    justify-content: flex-end;
     width: 37px;
     padding: 10px 13px 10px 10px;
+    transform: translate(50% 50%);
 }
 
 #objetivos_titulo_imagem {
@@ -210,6 +213,7 @@ main {
 }
 
 #objetivos p {
+
     background-color: #D9FAFF;
     font-family: var(--Montserrat);
     font-weight: 600;
