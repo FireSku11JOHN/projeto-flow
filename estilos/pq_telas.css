@@ -117,6 +117,7 @@
 
     #objetivos_titulo_titulo {
         width: 190px;
+        margin: 10px 0px 0px 10px;
         box-shadow: #F58718 5px 5px;
 
     }
@@ -135,14 +136,18 @@
         margin-top: 70px;
         border-radius: 13px;
         box-shadow: 10px -10px 0px #DCBAA1;
+    transform: translate(0px, 300px);
+
     }
 
     #objetivos p {
         font-size: 15px;
         padding: 9px;
         line-height: 1.5em;
-        width: 200px;
-        height: 400px;
+        width: 270px;
+        height: 275px;
+        transform: translate(-250px, 50px);
+
     }
 
 }

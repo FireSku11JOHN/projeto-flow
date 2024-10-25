@@ -201,7 +201,7 @@ main {
     justify-content: flex-end;
     width: 37px;
     padding: 10px 13px 10px 10px;
-    transform: translate(50% 50%);
+    
 }
 
 #objetivos_titulo_imagem {
@@ -213,14 +213,13 @@ main {
 }
 
 #objetivos p {
-
     background-color: #D9FAFF;
     font-family: var(--Montserrat);
     font-weight: 600;
     font-size: 1.7em;
     padding: 15px;
     line-height: 1.5em;
-    width: 470px;
+    width: 4790px;
     height: 530px;
     border-radius: 12px;
 }
