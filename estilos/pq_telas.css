@@ -163,4 +163,21 @@
         display: none;
     }
 
+    #quem_pode_titulo {
+        height: 30px;
+        width: 320px;
+        box-shadow: #F58718 5px 5px;
+        margin: 10px 0px 0px 10px;
+    }
+
+    #quem_pode_titulo img {
+        width: 22px;
+        margin: 0px;
+        padding: 5px 7px 5px 5px;
+    }
+
+    #quem_pode_titulo h1 {
+        font-weight: bold;
+        font-size: 22px;
+    }
 }
