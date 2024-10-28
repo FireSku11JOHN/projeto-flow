@@ -14,6 +14,7 @@
     --Jost: "Jost", sans-serif;
     --cor1: #04657B;
     --cor2: #1C8CA5;
+    --cor4: #F58718;
     --cor6: #ebe0cf;
 }
 
@@ -28,7 +29,7 @@ header {
     width: 100vw;
     max-width: 100%;
     justify-content: space-around;
-    border-bottom: 13px solid #F58718;
+    border-bottom: 13px solid var(--cor4);
     box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.516);
 }
 
@@ -245,7 +246,7 @@ main {
     background-color: white;
     width: 600px;
     border-radius: 0px 0px 10px 0px;
-    box-shadow: #F58718 8px 8px;
+    box-shadow: var(--cor4) 8px 8px;
 }
 
 #quem_pode_titulo h1 {
@@ -276,6 +277,7 @@ main {
     margin-top: 30px;
     border-radius: 0px 60px 60px 0px;
     margin-left: -101px;
+    box-shadow: 7px 7px 0px var(--cor4);
 }
 
 #quem_pode_conteudo_pontos ul{
@@ -293,7 +295,7 @@ main {
 }
 
 #quem_pode_conteudo_pontos li > img {
-    margin: 0px 4px 6px 0px;
+    margin: 0px 4px 0px 0px;
     /* width: 27px; */
     height: 27px;
 }
@@ -320,7 +322,8 @@ main {
     display: flex;
     align-items: center;
     margin-right: -101px;
-    height: 410px;
+    margin-top: 32px;
+    height: 370px;
     background: url(../imagens/bg_biblia_aberta.png);
     background-repeat: no-repeat;
     background-size:cover;
