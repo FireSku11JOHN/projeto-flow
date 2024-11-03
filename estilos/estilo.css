@@ -48,6 +48,7 @@ header {
     font-weight: 600;
     font-size: 24px;
     height: 74px;
+    width: 135px;
     margin: auto;
     margin-left: 20px;
     padding-left: 7px;
@@ -266,17 +267,15 @@ main {
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #quem_pode_conteudo_pontos {
     background-color: var(--cor1);
     width: 700px;
     padding: 20px;
-    margin-left: -76px;
     margin-top: 30px;
     border-radius: 0px 60px 60px 0px;
-    margin-left: -101px;
     box-shadow: 7px 7px 0px var(--cor4);
 }
 
@@ -296,7 +295,6 @@ main {
 
 #quem_pode_conteudo_pontos li > img {
     margin: 0px 4px 0px 0px;
-    /* width: 27px; */
     height: 27px;
 }
 
@@ -321,7 +319,6 @@ main {
     z-index: 1;
     display: flex;
     align-items: center;
-    margin-right: -101px;
     margin-top: 32px;
     height: 370px;
     background: url(../imagens/bg_biblia_aberta.png);
