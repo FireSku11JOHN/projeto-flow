@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0px;
@@ -12,6 +13,7 @@
     --Montserrat: "Montserrat", sans-serif;
     --BalooBhai: "Baloo Bhai 2", sans-serif;
     --Jost: "Jost", sans-serif;
+    --Kalam: "Kalam", cursive;
     --cor1: #04657B;
     --cor2: #1C8CA5;
     --cor4: #F58718;
@@ -339,4 +341,110 @@ main {
     border-radius: 50%;
     transform: translate(10%, -50%);
     z-index: -1;
+}
+
+#junte_se {
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+    background-image: linear-gradient(to bottom, var(--cor1), #1C8CA5);
+    /* background-image: url(../imagens/ft_juntos.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#junte_se_texto {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    gap: 18px;
+}
+
+#junte_se_imagem {
+    align-self: flex-start;
+}
+
+#junte_se_texto > h1 {
+    height: 60px;
+    width: 400px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 2.7em;
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: var(--cor4) 8px 8px;
+}
+
+#junte_se_texto > h2 {
+    font-family: var(--Jost);
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+}
+
+#junte_se_texto > p {
+    font-family: var(--Kalam);
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    height: 58px;
+    border-bottom: 1px solid white;
+}
+
+#junte_se_imagens > img{
+    height: 20vw;
+    border: 14px solid #D9D9D9;
+    border-bottom: 37px solid #D9D9D9;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.432);
+}
+
+
+/* #ft_1 {
+    transform: rotate(10deg) translate(5vw, -15vh);
+    height: 0px;
+}
+#ft_2 {
+    transform: rotate(20deg) translate(-47%, 60%);
+}
+#ft_3 {
+    transform: rotate(7deg) translate(-130%, 135%);
+}
+#ft_4 {
+    transform: rotate(10deg) translate(-130%, 110%);
+    margin: auto;
+}
+#ft_5 {
+    transform: rotate(7deg) translate(-180%, 50%);
+    display: none;
+}
+#ft_6 {
+    transform: rotate(11deg) translate(290%, -140%);
+}
+#ft_7 {
+    transform: rotate(-16deg) translate(290%, 50%);
+}
+#ft_8 {
+    transform: rotate(10deg) translate(75%, -10%);
+    display: none;
+} */
+
+.carrossel_junte_se {
+    position: relative;
+    width: 100vh;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.junte_se_imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* width: 500%; */
+    /* width: 300%; O suficiente para acomodar todas as imagens em uma linha */
+}
+
+.junte_se_carrossel {
+    min-width: 100%;
 }
