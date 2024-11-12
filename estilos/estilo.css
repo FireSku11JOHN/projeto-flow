@@ -346,11 +346,9 @@ main {
 #junte_se {
     display: flex;
     flex-direction: column;
-    height: 1080px;
-    background-image: linear-gradient(to bottom, var(--cor1), #1C8CA5);
-    /* background-image: url(../imagens/ft_juntos.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
+    height: 100vh;
+    background-color: var(--cor1);
+    /* background-image: linear-gradient(to bottom, var(--cor1), #1C8CA5); */
 }
 
 #junte_se_texto {
@@ -401,50 +399,59 @@ main {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.432);
 }
 
+#carrosseis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-image: linear-gradient(to bottom,var(--cor1), #29b6d5, var(--cor1));
+    /* background-image: url(../imagens/bg_carrossel.png); */
+    /* background-size: cover; */
+    border-bottom: 1px solid white;
+}
 
-/* #ft_1 {
-    transform: rotate(10deg) translate(5vw, -15vh);
-    height: 0px;
-}
-#ft_2 {
-    transform: rotate(20deg) translate(-47%, 60%);
-}
-#ft_3 {
-    transform: rotate(7deg) translate(-130%, 135%);
-}
-#ft_4 {
-    transform: rotate(10deg) translate(-130%, 110%);
-    margin: auto;
-}
-#ft_5 {
-    transform: rotate(7deg) translate(-180%, 50%);
-    display: none;
-}
-#ft_6 {
-    transform: rotate(11deg) translate(290%, -140%);
-}
-#ft_7 {
-    transform: rotate(-16deg) translate(290%, 50%);
-}
-#ft_8 {
-    transform: rotate(10deg) translate(75%, -10%);
-    display: none;
-} */
-
-.carrossel_junte_se {
+.carrossel_junte_se_1 {
     position: relative;
     width: 100vh;
     max-width: 300px;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.491);
+    border-right: 3px solid var(--cor4);
+    border-bottom: 3px solid var(--cor4);
+
 }
+.carrossel_junte_se_2 {
+    position: relative;
+    width: 100vh;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.491);
+    border-right: 3px solid var(--cor4);
+    border-bottom: 3px solid var(--cor4);
+}
+.carrossel_junte_se_3 {
+    position: relative;
+    width: 100vh;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.491);
+    border-right: 3px solid var(--cor4);
+    border-bottom: 3px solid var(--cor4);
+}
+
 .junte_se_imagens {
     display: flex;
     transition: transform 0.5s ease;
-    /* width: 500%; */
-    /* width: 300%; O suficiente para acomodar todas as imagens em uma linha */
 }
 
-.junte_se_carrossel {
+.carrossel_img {
     min-width: 100%;
+}
+
+footer {
+    height: 100px;
+
 }

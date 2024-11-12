@@ -4,7 +4,7 @@ let autoSlideInterval;
 // Função para exibir o slide correto e implementar o loop infinito
 function showSlide(index) {
     const slides = document.querySelector('.junte_se_imagens');
-    const totalSlides = document.querySelectorAll('.junte_se_carrossel').length;
+    const totalSlides = document.querySelectorAll('.carrossel_img').length;
 
     // Define o índice atual e move o carrossel para a imagem correspondente
     currentIndex = index;
@@ -49,8 +49,8 @@ function stopAutoSlide() {
 }
 
 // Pausar o carrossel temporariamente quando o usuário interagir
-document.querySelector('.carrossel_junte_se').addEventListener('mouseover', stopAutoSlide);
-document.querySelector('.carrossel_junte_se').addEventListener('mouseout', startAutoSlide);
+document.querySelector('.carrossel_junte_se_1').addEventListener('mouseover', stopAutoSlide);
+document.querySelector('.carrossel_junte_se_1').addEventListener('mouseout', startAutoSlide);
 
 // Inicializa o carrossel
 showSlide(currentIndex);
