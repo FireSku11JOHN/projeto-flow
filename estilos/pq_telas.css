@@ -119,6 +119,8 @@
 
     #objetivos {
         justify-content: flex-start;
+        align-items: space-between;
+        display: flex;
         width: 600px;
         flex-direction: column;
     }
@@ -134,6 +136,7 @@
     }
 
     #objetivos_titulo_titulo img {
+        align-self: flex-end;
         width: 22px;
         padding: 5px 7px 5px 5px;
     }
@@ -156,7 +159,7 @@
         padding: 9px;
         line-height: 1.5em;
         width: 270px;
-        transform: translate(55%, -70%);
+        transform: translate(45%, -70%);
     }
 
     #quem_pode {
