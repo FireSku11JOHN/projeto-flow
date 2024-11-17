@@ -214,18 +214,17 @@
     }
 
     #quem_pode_conteudo_pontos li {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     #quem_pode_conteudo_pontos li > img {
         margin: 0px 4px 0px 0px;
-        height: 20px;
+        height: 16px;
     }
 
     #quem_pode_conteudo_pontos li > p {
-        /* padding: 3px; */
         height: 28px;
-        font-size: 20px;
+        font-size: 16px;
         border-bottom: solid 1px var(--cor6);
     }
 
@@ -233,7 +232,7 @@
         align-self: flex-end ;
         height: 200px;
         width: 300px;
-        margin-top: 130px;
+        margin-top: 110px;
     }
 
     #quem_pode_conteudo p {
@@ -242,18 +241,18 @@
         height: 30px;
         font-family: var(--Nunito_Sans);
         font-weight: 600;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     #quem_pode_conteudo::before {
         content: "";
         position: absolute;
-        top: 50%;
+        top: 54.5%;
         left: 50%;
-        width: 540px;
-        height: 540px;
+        width: 700px;
+        height: 360px;
         background-color: var(--cor1);
-        border-radius: 50%;
+        border-radius: 100px;
         transform: translate(-20%, -11%);
         z-index: -1;
     }
