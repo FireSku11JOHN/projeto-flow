@@ -256,7 +256,7 @@
     }
 
     #junte_se {
-        height: 120vh;
+        height: 110vh;
     }
 
     #junte_se_texto > h1 {
@@ -281,10 +281,10 @@
     }
 
     #carrosseis {
-        display: inline;
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     .carrossel_junte_se_1{
@@ -295,18 +295,18 @@
     }
 
     .carrossel_junte_se_2{
-        height: 220px;
+        display: none;
+        /* height: 220px;
         max-width: 190px;
         align-self: flex-end;
         margin: 0px 30px 10px 0px;
-        transform: translate(130%, -45%);
+        transform: translate(130%, -45%); */
     }
     .carrossel_junte_se_3{
         height: 220px;
         max-width: 190px;
-        align-self: flex-start;
-        margin: 0px 0px 0px 30px;
-        transform: translate(0%, -97%);
+        align-self: flex-end;
+        margin: 5px 30px
     }
 
     #bnt_junte-se {
