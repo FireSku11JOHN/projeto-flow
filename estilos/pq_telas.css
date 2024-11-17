@@ -232,7 +232,10 @@
         align-self: flex-end ;
         height: 200px;
         width: 300px;
-        margin-top: 110px;
+        margin-top: 90px;
+        border-top: 40px solid var(--cor1);
+        border-left: 50px solid var(--cor1);
+        border-bottom: 40px solid var(--cor1);
     }
 
     #quem_pode_conteudo p {
@@ -245,7 +248,8 @@
     }
 
     #quem_pode_conteudo::before {
-        content: "";
+        display: none;
+        /* content: "";
         position: absolute;
         top: 54.5%;
         left: 50%;
@@ -254,7 +258,7 @@
         background-color: var(--cor1);
         border-radius: 100px;
         transform: translate(-20%, -11%);
-        z-index: -1;
+        z-index: -1; */
     }
 
     #junte_se {
