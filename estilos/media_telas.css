@@ -61,7 +61,6 @@
 
     #objetivos {
         height: 75vh;
-        /* display: none; */
     }
 
     #objetivos_titulo_titulo  {
@@ -87,5 +86,61 @@
         margin: 40px 20px 40px 10px;
         font-size: 14px;
         width: 230px;
+    }
+
+    #quem_pode {
+        height: 85vh;
+    }
+
+    #quem_pode_titulo {
+        height: 37px;
+        width: 400px;
+        box-shadow: var(--cor4) 6px 6px;
+    }
+    
+    #quem_pode_titulo h1 {
+        font-size: 27px;
+    }
+    
+    #quem_pode_titulo img {
+        width: 27px;
+        padding: 0px;
+    }
+
+    #quem_pode_conteudo_pontos {
+        width: 360px;
+        padding: 20px 5px 20px 5px;
+        margin-top: 30px;
+    }
+
+    #quem_pode_conteudo_pontos ul{
+        margin-left: 0px;
+    }
+    
+    #quem_pode_conteudo_pontos li {
+        margin-bottom: 20px;
+    }
+    
+    #quem_pode_conteudo_pontos li > img {
+        margin: 0px 2px 0px 0px;
+        height: 18px;
+    }
+    
+    #quem_pode_conteudo_pontos li > p {
+        font-weight: 400;
+        height: 23px;
+        font-size: 19px;
+    }
+
+    #quem_pode_conteudo p {
+        height: 40px;
+        font-size: 25px;
+    }
+    
+    #quem_pode_conteudo_imagem {
+        margin-left: 15px;
+        width: 340px;
+        margin-top: 32px;
+        height: 250px;
     }
 }
