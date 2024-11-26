@@ -77,7 +77,7 @@ main img {
 
 @media screen and (max-width: 650px){
     #principal {
-        margin: 10px;
+        margin: 50px 10px;
         padding: 15px;
     }
 
