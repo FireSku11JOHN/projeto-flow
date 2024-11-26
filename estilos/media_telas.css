@@ -59,6 +59,10 @@
         margin-right: 22px;
     }
 
+    #quem_somos_versiculo {
+        margin-right: 10px;
+    }
+
     #objetivos {
         height: 75vh;
     }
@@ -142,5 +146,34 @@
         width: 340px;
         margin-top: 32px;
         height: 250px;
+    }
+
+    footer {
+        align-items: flex-start;
+    }
+
+    footer > div{
+        width: 200px;
+        padding: 40px 20px;
+    }
+
+    #logo_footer {
+        margin-bottom: 20px;
+    }
+
+    #logo_footer > img {
+        height: 40px;
+        padding-left: 3px;
+    }
+    
+    #logo_footer > p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        padding-top: 4px;
+        border-top: 1px solid white;
+    }
+    
+    footer  h2 {
+        font-size: 18px;
     }
 }
