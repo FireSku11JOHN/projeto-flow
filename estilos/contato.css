@@ -80,4 +80,15 @@ main img {
         height: 200px;
         margin-left: 15px;
     }
+
+    #container_texto h1 {
+        font-size: 20px;
+        box-shadow: 4px 4px var(--cor4);
+        padding: 3px 8px;
+    }
+    
+    #container_texto p, h2{
+        margin: 10px;
+        font-size: 13px;
+    }
 }
