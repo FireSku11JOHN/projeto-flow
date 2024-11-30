@@ -55,3 +55,10 @@ document.querySelector('.carrossel_junte_se_1').addEventListener('mouseout', sta
 // Inicializa o carrossel
 showSlide(currentIndex);
 startAutoSlide();
+
+function scrollup() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Faz o scroll suave
+    });
+}

@@ -51,6 +51,7 @@ document.querySelector('.carrossel_junte_se_1').addEventListener('mouseout', () 
 document.querySelector('.carrossel_junte_se_2').addEventListener('mouseover', () => stopAutoSlide(2));
 document.querySelector('.carrossel_junte_se_2').addEventListener('mouseout', () => startAutoSlide(2));
 
+
 // Inicializa os carrosséis e os auto-slides
 showSlide(1, currentIndices[0]);
 showSlide(2, currentIndices[1]);
@@ -58,3 +59,10 @@ showSlide(3, currentIndices[2]);
 startAutoSlide(1);
 startAutoSlide(2);
 startAutoSlide(3);
+
+function scrollup() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Faz o scroll suave
+    });
+}

@@ -483,6 +483,16 @@ footer a,p {
     letter-spacing: 1px;
 }
 
+ button {
+    font-family: var(--BalooBhai);
+    font-size: 17px;
+    text-decoration: underline;
+    border: none;
+    background-color: var(--cor3);
+    color: white;
+
+ }
+
 #logo_footer{
     text-align: center;
 }
