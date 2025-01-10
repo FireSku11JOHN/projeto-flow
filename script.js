@@ -1,64 +1,62 @@
-let currentIndex = 1; // Começamos em 1 devido à duplicação da primeira imagem
-let autoSlideInterval;
+let currentIndices = [1, 1, 1]; 
+let autoSlideIntervals = [];
 
-// Função para exibir o slide correto e implementar o loop infinito
-function showSlide(index) {
-    const slides = document.querySelector('.junte_se_imagens');
-    const totalSlides = document.querySelectorAll('.carrossel_img').length;
+function showSlide(carouselIndex, slideIndex) {
+    const carousel = document.querySelector(`.carrossel_junte_se_${carouselIndex} .junte_se_imagens`);
+    const totalSlides = document.querySelectorAll(`.carrossel_junte_se_${carouselIndex} .carrossel_img`).length;
 
-    // Define o índice atual e move o carrossel para a imagem correspondente
-    currentIndex = index;
-    const offset = -currentIndex * 100;
-    slides.style.transition = 'transform 0.5s ease'; // Ativa a transição
-    slides.style.transform = `translateX(${offset}%)`;
+    currentIndices[carouselIndex - 1] = slideIndex;
+    const offset = -currentIndices[carouselIndex - 1] * 100;
+    carousel.style.transition = 'transform 0.5s ease';
+    carousel.style.transform = `translateX(${offset}%)`;
 
-    // Corrige a posição para o início ou fim quando atinge as duplicações
-    if (currentIndex === totalSlides - 1) {
-        // Vai da última imagem duplicada para o primeiro slide real
+    if (slideIndex === totalSlides - 1) {
         setTimeout(() => {
-            slides.style.transition = 'none'; // Desativa a transição
-            currentIndex = 1;
-            slides.style.transform = `translateX(-100%)`;
+            carousel.style.transition = 'none';
+            currentIndices[carouselIndex - 1] = 1;
+            carousel.style.transform = `translateX(-100%)`;
         }, 500);
-    } else if (currentIndex === 0) {
-        // Vai da primeira imagem duplicada para o último slide real
+    } else if (slideIndex === 0) {
         setTimeout(() => {
-            slides.style.transition = 'none'; // Desativa a transição
-            currentIndex = totalSlides - 2;
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            carousel.style.transition = 'none';
+            currentIndices[carouselIndex - 1] = totalSlides - 2;
+            carousel.style.transform = `translateX(-${(totalSlides - 2) * 100}%)`;
         }, 500);
     }
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
+function nextSlide(carouselIndex) {
+    showSlide(carouselIndex, currentIndices[carouselIndex - 1] + 1);
 }
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
+function prevSlide(carouselIndex) {
+    showSlide(carouselIndex, currentIndices[carouselIndex - 1] - 1);
 }
 
-// Função para iniciar a navegação automática
-function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 2000); // Muda de slide a cada 3 segundos
+function startAutoSlide(carouselIndex) {
+    autoSlideIntervals[carouselIndex - 1] = setInterval(() => nextSlide(carouselIndex), 3000);
 }
 
-// Função para parar a navegação automática
-function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
+function stopAutoSlide(carouselIndex) {
+    clearInterval(autoSlideIntervals[carouselIndex - 1]);
 }
 
-// Pausar o carrossel temporariamente quando o usuário interagir
-document.querySelector('.carrossel_junte_se_1').addEventListener('mouseover', stopAutoSlide);
-document.querySelector('.carrossel_junte_se_1').addEventListener('mouseout', startAutoSlide);
+document.querySelector('.carrossel_junte_se_1').addEventListener('mouseover', () => stopAutoSlide(1));
+document.querySelector('.carrossel_junte_se_1').addEventListener('mouseout', () => startAutoSlide(1));
+document.querySelector('.carrossel_junte_se_2').addEventListener('mouseover', () => stopAutoSlide(2));
+document.querySelector('.carrossel_junte_se_2').addEventListener('mouseout', () => startAutoSlide(2));
 
-// Inicializa o carrossel
-showSlide(currentIndex);
-startAutoSlide();
+
+showSlide(1, currentIndices[0]);
+showSlide(2, currentIndices[1]);
+showSlide(3, currentIndices[2]);
+startAutoSlide(1);
+startAutoSlide(2);
+startAutoSlide(3);
 
 function scrollup() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Faz o scroll suave
+      behavior: 'smooth'
     });
 }
