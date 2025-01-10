@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+
+    header {
+        height: 110px;
+        max-width: 100%;
+    }
+
+    #logo-imagem {
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #logo p {
+        font-weight: 600;
+        font-size: 19px;
+        height: 50px;
+        width: 140px;
+    }
+
+    #menu li {
+        align-self: center;
+        margin:0px;
+        font-size: 14px;
+    }
+    
+    #menu li > a{
+        padding: 10px;
+    }
+
+    #quem_somos {
+        height: 120vh;
+    }
+
+    #quem_somos_texto {
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        width: 630px;
+    }
+
+    #quem_somos_texto_titulo {
+        width: 300px;
+        min-width: 300px;
+        height: 36px;
+    }
+    
+    #quem_somos_texto_icone_grupo{
+        width: 23px;
+    }
+    
+    #quem_somos_texto_titulo h1 {
+        font-size: 23px;
+    }
+    
+    #quem_somos_texto p {
+        font-size: 19px;
+        margin-right: 22px;
+    }
+
+    #quem_somos_versiculo {
+        margin-right: 10px;
+    }
+
+    #objetivos {
+        height: 75vh;
+    }
+
+    #objetivos_titulo_titulo  {
+        width: 220px;
+        height: 34px;
+        box-shadow: #F58718 6px 6px;
+    }
+    
+    #objetivos_titulo_titulo h1 {
+        font-size: 27px;
+    }
+    
+    #objetivos_titulo_titulo img{
+        width: 27px;
+    }
+
+    #objetivos_titulo_imagem {
+        width: 260px;
+        box-shadow: 17px -17px 0px #DCBAA1;
+    }
+    
+    #objetivos p {
+        margin: 40px 20px 40px 10px;
+        font-size: 14px;
+        width: 230px;
+    }
+
+    #quem_pode {
+        height: 85vh;
+    }
+
+    #quem_pode_titulo {
+        height: 37px;
+        width: 400px;
+        box-shadow: var(--cor4) 6px 6px;
+    }
+    
+    #quem_pode_titulo h1 {
+        font-size: 27px;
+    }
+    
+    #quem_pode_titulo img {
+        width: 27px;
+        padding: 0px;
+    }
+
+    #quem_pode_conteudo_pontos {
+        width: 360px;
+        padding: 20px 5px 20px 5px;
+        margin-top: 30px;
+    }
+
+    #quem_pode_conteudo_pontos ul{
+        margin-left: 0px;
+    }
+    
+    #quem_pode_conteudo_pontos li {
+        margin-bottom: 20px;
+    }
+    
+    #quem_pode_conteudo_pontos li > img {
+        margin: 0px 2px 0px 0px;
+        height: 18px;
+    }
+    
+    #quem_pode_conteudo_pontos li > p {
+        font-weight: 400;
+        height: 23px;
+        font-size: 19px;
+    }
+
+    #quem_pode_conteudo p {
+        height: 40px;
+        font-size: 25px;
+    }
+    
+    #quem_pode_conteudo_imagem {
+        margin-left: 15px;
+        width: 340px;
+        margin-top: 32px;
+        height: 250px;
+    }
+
+    footer {
+        align-items: flex-start;
+    }
+
+    footer > div{
+        width: 200px;
+        padding: 40px 20px;
+    }
+
+    #logo_footer {
+        margin-bottom: 20px;
+    }
+
+    #logo_footer > img {
+        height: 40px;
+        padding-left: 3px;
+    }
+    
+    #logo_footer > p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        padding-top: 4px;
+        border-top: 1px solid white;
+    }
+    
+    footer  h2 {
+        font-size: 18px;
+    }
+}
